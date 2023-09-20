@@ -1,5 +1,7 @@
-function renderQuestions() {
-    let content = document.getElementById('content');
-    content.innerHTML = '';
-    content.innerHTML = questions;
+function init() {
+    renderQuestion();
+};
+
+function renderQuestion() {
+    let
 };

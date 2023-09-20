@@ -17,16 +17,43 @@
 
 </head>
 
-<body>
+<body onload="init()">
     <div class="background">
         <div class="center-box">
             <div class="content" id="content">
-                <div class="card">
+                <div class="card quiz-card">
                     <img src="./img/card-image.jpeg" class="card-img-top" alt="">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Frage</h5>
+                        <div>
+                            <div class="card mb-2">
+                                <div class="card-body">
+                                    Antwort
+                                </div>
+                            </div>
+
+                            <div class="card mb-2">
+                                <div class="card-body">
+                                    Antwort
+                                </div>
+                            </div>
+
+                            <div class="card mb-2">
+                                <div class="card-body">
+                                    Antwort
+                                </div>
+                            </div>
+
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    Antwort
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-card-footer pt-3">
+                            <div><b>1</b> von <b>5</b> Fragen</div>
+                            <a href="#" class="btn btn-primary">Nächste Frage</a>
+                        </div>
                     </div>
                 </div>
             </div>

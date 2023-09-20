@@ -26,12 +26,35 @@ body {
 }
 
 .card {
-    width: 400px;
     border-radius: 8px !important;
-    border: 1px solid black !important;
+    position: relative;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    border: 2px solid transparent;
+    border-radius: inherit;
+    background-image: linear-gradient(0deg, rgba(81, 148, 201, 1) 10%, rgba(214, 35, 183, 1) 100%);
 }
 
 .card-img-top {
     aspect-ratio: 4/3;
     object-fit: cover;
+    border-radius: 8px !important;
+}
+
+.quiz-card {
+    width: 30rem;
+}
+
+.quiz-card-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.175);
 }
