@@ -1,7 +1,7 @@
 let questions =
 
     {
-        "category": [
+        "categories": [
 
             {
                 "HTML Grundlagen": [
@@ -336,4 +336,6 @@ let questions =
         ]
     };
 
-let categories = questions
+
+let categories = questions.categories;
+let firstQuestion = 0;
