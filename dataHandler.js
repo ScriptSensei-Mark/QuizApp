@@ -7,7 +7,7 @@ let questions =
                 "HTML Grundlagen": [
 
                     {
-                        "question": "Wie wird ein Absatz in HTML erstellt?",
+                        "questionText": "Wie wird ein Absatz in HTML erstellt?",
                         "answers": [
                             "<p>",
                             "<paragraph>",
@@ -17,7 +17,7 @@ let questions =
                         "correctAnswer": 0
                     },
                     {
-                        "question": "Welches HTML-Element wird verwendet, um eine geordnete Liste zu erstellen?",
+                        "questionText": "Welches HTML-Element wird verwendet, um eine geordnete Liste zu erstellen?",
                         "answers": [
                             "<li>",
                             "<dl>",
@@ -27,7 +27,7 @@ let questions =
                         "correctAnswer": 2
                     },
                     {
-                        "question": "Wie erstellt man einen Zeilenumbruch in HTML?",
+                        "questionText": "Wie erstellt man einen Zeilenumbruch in HTML?",
                         "answers": [
                             "<linebreak>",
                             "<br>",
@@ -37,7 +37,7 @@ let questions =
                         "correctAnswer": 1
                     },
                     {
-                        "question": "Welches HTML-Element wird verwendet, um einen Link zu erstellen?",
+                        "questionText": "Welches HTML-Element wird verwendet, um einen Link zu erstellen?",
                         "answers": [
                             "<url>",
                             "<a>",
@@ -47,7 +47,7 @@ let questions =
                         "correctAnswer": 1
                     },
                     {
-                        "question": "Wie definiert man eine Kommentarzeile in HTML?",
+                        "questionText": "Wie definiert man eine Kommentarzeile in HTML?",
                         "answers": [
                             "<!-- Dies ist ein Kommentar -->",
                             "<!--- Dies ist ein Kommentar --->",
@@ -62,7 +62,7 @@ let questions =
                 "HTML Fortgeschritten": [
 
                     {
-                        "question": "Was ist HTML5?",
+                        "questionText": "Was ist HTML5?",
                         "answers": [
                             "Die fünfte Version von HTML",
                             "Eine neue Art von Kaffee",
@@ -72,7 +72,7 @@ let questions =
                         "correctAnswer": 0
                     },
                     {
-                        "question": "Was ist ein HTML-Semantik-Element?",
+                        "questionText": "Was ist ein HTML-Semantik-Element?",
                         "answers": [
                             "Ein HTML-Tag, der im Internet Explorer verwendet wird",
                             "Ein Tag, der die Bedeutung eines Inhalts beschreibt",
@@ -82,7 +82,7 @@ let questions =
                         "correctAnswer": 1
                     },
                     {
-                        "question": "Welches HTML-Element wird verwendet, um eine Tabelle zu erstellen?",
+                        "questionText": "Welches HTML-Element wird verwendet, um eine Tabelle zu erstellen?",
                         "answers": [
                             "<table>",
                             "<grid>",
@@ -92,7 +92,7 @@ let questions =
                         "correctAnswer": 0
                     },
                     {
-                        "question": "Welches HTML-Element wird verwendet, um eine Gruppe von Optionen in einem Dropdown-Menü zu erstellen?",
+                        "questionText": "Welches HTML-Element wird verwendet, um eine Gruppe von Optionen in einem Dropdown-Menü zu erstellen?",
                         "answers": [
                             "<option>",
                             "<menu>",
@@ -102,7 +102,7 @@ let questions =
                         "correctAnswer": 2
                     },
                     {
-                        "question": "Welches HTML-Element wird verwendet, um eine Untertitelung für Medieninhalte bereitzustellen?",
+                        "questionText": "Welches HTML-Element wird verwendet, um eine Untertitelung für Medieninhalte bereitzustellen?",
                         "answers": [
                             "<caption>",
                             "<subtitle>",
@@ -117,7 +117,7 @@ let questions =
                 "CSS Grundlagen": [
 
                     {
-                        "question": "Wofür steht CSS?",
+                        "questionText": "Wofür steht CSS?",
                         "answers": [
                             "Cascading Super Style",
                             "Computer Style Sheets",
@@ -127,7 +127,7 @@ let questions =
                         "correctAnswer": 3
                     },
                     {
-                        "question": "Wie verknüpft man eine externe CSS-Datei mit einer HTML-Seite?",
+                        "questionText": "Wie verknüpft man eine externe CSS-Datei mit einer HTML-Seite?",
                         "answers": [
                             "<style>Tag verwenden",
                             "<link>Tag verwenden",
@@ -137,7 +137,7 @@ let questions =
                         "correctAnswer": 1
                     },
                     {
-                        "question": "Wie ändert man die Hintergrundfarbe eines Elements in CSS?",
+                        "questionText": "Wie ändert man die Hintergrundfarbe eines Elements in CSS?",
                         "answers": [
                             "background-color: red;",
                             "color: background-red;",
@@ -147,7 +147,7 @@ let questions =
                         "correctAnswer": 0
                     },
                     {
-                        "question": "Welches CSS-Selektorzeichen wird verwendet, um Klassen zu selektieren?",
+                        "questionText": "Welches CSS-Selektorzeichen wird verwendet, um Klassen zu selektieren?",
                         "answers": [
                             "#",
                             "<",
@@ -157,7 +157,7 @@ let questions =
                         "correctAnswer": 3
                     },
                     {
-                        "question": "Wie wählt man in CSS alle <p>-Elemente auf einer Seite aus?",
+                        "questionText": "Wie wählt man in CSS alle <p>-Elemente auf einer Seite aus?",
                         "answers": [
                             "paragraph { }",
                             ".p { }",
@@ -172,7 +172,7 @@ let questions =
                 "CSS Fortgeschritten": [
 
                     {
-                        "question": "Wie ändert man die Hintergrundfarbe eines Elements bei Hover-Effekten in CSS?",
+                        "questionText": "Wie ändert man die Hintergrundfarbe eines Elements bei Hover-Effekten in CSS?",
                         "answers": [
                             "background-color:hover",
                             "background-hover-color",
@@ -182,7 +182,7 @@ let questions =
                         "correctAnswer": 2
                     },
                     {
-                        "question": "Welche Eigenschaft in CSS wird verwendet, um den inneren Abstand eines Elements festzulegen?",
+                        "questionText": "Welche Eigenschaft in CSS wird verwendet, um den inneren Abstand eines Elements festzulegen?",
                         "answers": [
                             "margin",
                             "padding",
@@ -192,7 +192,7 @@ let questions =
                         "correctAnswer": 1
                     },
                     {
-                        "question": "Welches CSS-Selektorzeichen wird verwendet, um alle Links auf einer Seite auszuwählen?",
+                        "questionText": "Welches CSS-Selektorzeichen wird verwendet, um alle Links auf einer Seite auszuwählen?",
                         "answers": [
                             ".",
                             "#",
@@ -202,7 +202,7 @@ let questions =
                         "correctAnswer": 3
                     },
                     {
-                        "question": "Was bewirkt die CSS-Eigenschaft 'position: relative;'?",
+                        "questionText": "Was bewirkt die CSS-Eigenschaft 'position: relative;'?",
                         "answers": [
                             "Das Element wird relativ zum Elternelement positioniert.",
                             "Das Element wird absolut positioniert.",
@@ -212,7 +212,7 @@ let questions =
                         "correctAnswer": 0
                     },
                     {
-                        "question": "Wie fügt man in CSS einen Schatten zu einem Text hinzu?",
+                        "questionText": "Wie fügt man in CSS einen Schatten zu einem Text hinzu?",
                         "answers": [
                             "shadow: 2px 2px 4px #000;",
                             "box-shadow: 2px 2px 4px #000;",
@@ -227,7 +227,7 @@ let questions =
                 "JavaScript Grundlagen": [
 
                     {
-                        "question": "Was ist JavaScript?",
+                        "questionText": "Was ist JavaScript?",
                         "answers": [
                             "Eine Programmiersprache für Webentwicklung",
                             "Ein Texteditor für HTML",
@@ -237,7 +237,7 @@ let questions =
                         "correctAnswer": 0
                     },
                     {
-                        "question": "Was ist die Ausgabe von 'console.log(5 + '5');' in JavaScript?",
+                        "questionText": "Was ist die Ausgabe von 'console.log(5 + '5');' in JavaScript?",
                         "answers": [
                             "10",
                             "55",
@@ -247,7 +247,7 @@ let questions =
                         "correctAnswer": 1
                     },
                     {
-                        "question": "Welche Schleifenstruktur wird verwendet, um Code wiederholt auszuführen?",
+                        "questionText": "Welche Schleifenstruktur wird verwendet, um Code wiederholt auszuführen?",
                         "answers": [
                             "if-Schleife",
                             "switch-Schleife",
@@ -257,7 +257,7 @@ let questions =
                         "correctAnswer": 2
                     },
                     {
-                        "question": "Wie fügt man ein Kommentar in JavaScript ein?",
+                        "questionText": "Wie fügt man ein Kommentar in JavaScript ein?",
                         "answers": [
                             "// Dies ist ein Kommentar",
                             "<!-- Dies ist ein Kommentar -->",
@@ -267,7 +267,7 @@ let questions =
                         "correctAnswer": 0
                     },
                     {
-                        "question": "Was ist ein Array in JavaScript?",
+                        "questionText": "Was ist ein Array in JavaScript?",
                         "answers": [
                             "Ein Datentyp für Datum und Uhrzeit",
                             "Ein Element in HTML",
@@ -282,7 +282,7 @@ let questions =
                 "JavaScript Fortgeschritten": [
 
                     {
-                        "question": "Was ist der Unterschied zwischen 'let' und 'var' bei der Deklaration von Variablen in JavaScript?",
+                        "questionText": "Was ist der Unterschied zwischen 'let' und 'var' bei der Deklaration von Variablen in JavaScript?",
                         "answers": [
                             "'let' hat eine Block-Scope-Begrenzung, während 'var' eine Funktionsscope-Begrenzung hat.",
                             "'let' hat eine Funktionsscope-Begrenzung, während 'var' eine Block-Scope-Begrenzung hat.",
@@ -292,7 +292,7 @@ let questions =
                         "correctAnswer": 0
                     },
                     {
-                        "question": "Was bewirkt die Methode 'push()' bei einem JavaScript-Array?",
+                        "questionText": "Was bewirkt die Methode 'push()' bei einem JavaScript-Array?",
                         "answers": [
                             "Sie entfernt das erste Element aus dem Array.",
                             "Sie fügt ein Element am Anfang des Arrays hinzu.",
@@ -302,7 +302,7 @@ let questions =
                         "correctAnswer": 2
                     },
                     {
-                        "question": "Was ist ein JavaScript-Objekt?",
+                        "questionText": "Was ist ein JavaScript-Objekt?",
                         "answers": [
                             "Ein Container für verschiedene Datentypen",
                             "Eine Funktion, die in JavaScript definiert ist",
@@ -312,7 +312,7 @@ let questions =
                         "correctAnswer": 0
                     },
                     {
-                        "question": "Was ist der Zweck der 'for...in'-Schleife in JavaScript?",
+                        "questionText": "Was ist der Zweck der 'for...in'-Schleife in JavaScript?",
                         "answers": [
                             "Sie wird verwendet, um einen Codeblock auszuführen, bis eine Bedingung erfüllt ist.",
                             "Sie wird verwendet, um über die Eigenschaften eines Objekts zu iterieren.",
@@ -322,7 +322,7 @@ let questions =
                         "correctAnswer": 1
                     },
                     {
-                        "question": "Was ist der Rückgabewert der Methode 'indexOf()' in JavaScript, wenn das gesuchte Element nicht im Array vorhanden ist?",
+                        "questionText": "Was ist der Rückgabewert der Methode 'indexOf()' in JavaScript, wenn das gesuchte Element nicht im Array vorhanden ist?",
                         "answers": [
                             "0",
                             "NaN",
@@ -338,4 +338,4 @@ let questions =
 
 
 let categories = questions.categories;
-let firstQuestion = 0;
+let currentQuestion = 0;

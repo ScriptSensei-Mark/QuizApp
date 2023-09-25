@@ -3,6 +3,10 @@ function init() {
     // showDifficulties();
 };
 
+let pickQuestion = (question = 0) => {
+    renderQuestion(category, question)
+};
+
 
 function showDifficulties() {
     for (let i = 0; i < categories.length; i++) {
@@ -14,11 +18,36 @@ function showDifficulties() {
 
 
 function renderQuestion() {
-    document.getElementById('questionText').innerHTML = categories[0][Object.keys(questions.categories[0])[0]][0].question;
-    document.getElementById('totalQuestions').innerHTML = categories[0][Object.keys(questions.categories[0])[0]].length;
-    document.getElementById('answer1').innerHTML = categories[0][Object.keys(questions.categories[0])[0]][0].answers[0];
-    document.getElementById('answer2').innerHTML = categories[0][Object.keys(questions.categories[0])[0]][0].answers[1];
-    document.getElementById('answer3').innerHTML = categories[0][Object.keys(questions.categories[0])[0]][0].answers[2];
-    document.getElementById('answer4').innerHTML = categories[0][Object.keys(questions.categories[0])[0]][0].answers[3];
+    let question = categories[0][Object.keys(categories[0])[0]][currentQuestion];
+    document.getElementById('questionText').innerText = question.questionText;
+    document.getElementById('totalQuestions').innerHTML = categories[0][Object.keys(categories[0])[0]].length;
+    document.getElementById('currentQuestion').innerHTML = currentQuestion + 1;
+    document.getElementById('answer1').innerText = question.answers[0];
+    document.getElementById('answer2').innerText = question.answers[1];
+    document.getElementById('answer3').innerText = question.answers[2];
+    document.getElementById('answer4').innerText = question.answers[3];
+};
 
+
+function renderStartingPage() {};
+
+
+function checkIfCorrect(answer) {
+    let question = categories[0][Object.keys(categories[0])[0]][currentQuestion];
+    let i = answer + 1;
+    if (answer == question.correctAnswer) {
+        document.getElementById(`answer${i}`).parentNode.classList.add('bg-success');
+    } else {
+        document.getElementById(`answer${i}`).parentNode.classList.add('bg-danger');
+        document.getElementById(`answer${question.correctAnswer+1}`).parentNode.classList.add('bg-success');
+    }
+    document.getElementById('nextQuestionBtn').disabled = false;
+};
+
+function nextQuestion() {
+    currentQuestion++;
+    renderQuestion();
+    document.getElementById('nextQuestionBtn').disabled = true;
+    document.querySelectorAll('.bg-success, .bg-danger')
+        .forEach(element => element.classList.remove('bg-success', 'bg-danger'));
 };

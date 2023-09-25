@@ -54,6 +54,16 @@ body {
     width: 30rem;
 }
 
+.answer-card:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+    cursor: pointer;
+}
+
+.bg-success,
+.bg-danger {
+    color: white !important;
+}
+
 .quiz-card-footer {
     display: flex;
     justify-content: space-between;
