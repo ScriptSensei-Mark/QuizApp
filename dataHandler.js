@@ -51,8 +51,8 @@ let questions =
                         "answers": [
                             "<!-- Dies ist ein Kommentar -->",
                             "<!--- Dies ist ein Kommentar --->",
-                            "<!-- Dies ist ein Kommentar -->",
-                            "<!-- Dies ist ein Kommentar -->"
+                            "// Dies ist ein Kommentar //",
+                            "/* Dies ist ein Kommentar */"
                         ],
                         "correctAnswer": 0
                     }

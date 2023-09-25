@@ -19,13 +19,19 @@ function showDifficulties() {
 
 function renderQuestion() {
     let question = categories[0][Object.keys(categories[0])[0]][currentQuestion];
-    document.getElementById('questionText').innerText = question.questionText;
-    document.getElementById('totalQuestions').innerHTML = categories[0][Object.keys(categories[0])[0]].length;
-    document.getElementById('currentQuestion').innerHTML = currentQuestion + 1;
-    document.getElementById('answer1').innerText = question.answers[0];
-    document.getElementById('answer2').innerText = question.answers[1];
-    document.getElementById('answer3').innerText = question.answers[2];
-    document.getElementById('answer4').innerText = question.answers[3];
+    let amountQuestions = categories[0][Object.keys(categories[0])[0]].length;
+
+    if (currentQuestion >= amountQuestions) {
+        //etwas anderes
+    } else {
+        document.getElementById('questionText').innerText = question.questionText;
+        document.getElementById('totalQuestions').innerHTML = categories[0][Object.keys(categories[0])[0]].length;
+        document.getElementById('currentQuestion').innerHTML = currentQuestion + 1;
+        document.getElementById('answer1').innerText = question.answers[0];
+        document.getElementById('answer2').innerText = question.answers[1];
+        document.getElementById('answer3').innerText = question.answers[2];
+        document.getElementById('answer4').innerText = question.answers[3];
+    }
 };
 
 
@@ -46,8 +52,9 @@ function checkIfCorrect(answer) {
 
 function nextQuestion() {
     currentQuestion++;
-    renderQuestion();
     document.getElementById('nextQuestionBtn').disabled = true;
     document.querySelectorAll('.bg-success, .bg-danger')
         .forEach(element => element.classList.remove('bg-success', 'bg-danger'));
+    renderQuestion();
+
 };
