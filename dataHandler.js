@@ -339,3 +339,4 @@ let questions =
 
 let categories = questions.categories;
 let currentQuestion = 0;
+let correctAnswers = 0;
