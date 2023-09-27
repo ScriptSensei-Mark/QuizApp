@@ -40,7 +40,10 @@ function renderQuestion() {
 };
 
 
-function toMainScreen() {}
+function toMainScreen() {
+    currentQuestion = 0;
+    correctAnswers = 0
+};
 
 
 function checkIfCorrect(answer) {
