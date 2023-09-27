@@ -21,9 +21,13 @@ function showDifficulties() {
 function renderQuestion() {
     let question = categories[0][Object.keys(categories[0])[0]][currentQuestion];
     let amountQuestions = categories[0][Object.keys(categories[0])[0]].length;
+    let categoryName = Object.keys(categories[0])[0];
     if (currentQuestion >= amountQuestions) {
         currentQuestion = 0;
-        document.getElementById('questionBody').innerHTML = '';
+        let cardImg = document.getElementById('cardImg');
+        cardImg.src = './img/neon-trophy.jpeg';
+        cardBody = document.getElementById('cardBody');
+        cardBody.innerHTML = getResultBodyHTML(categoryName, amountQuestions);
     } else {
         document.getElementById('questionText').innerText = question.questionText;
         document.getElementById('totalQuestions').innerHTML = categories[0][Object.keys(categories[0])[0]].length;
@@ -34,6 +38,9 @@ function renderQuestion() {
         }
     }
 };
+
+
+function toMainScreen() {}
 
 
 function checkIfCorrect(answer) {
