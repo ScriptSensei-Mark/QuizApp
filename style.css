@@ -20,10 +20,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.content {
-    /* background-color: white; */
+    min-height: 775px;
+    max-height: 775px;
 }
 
 .card {
@@ -43,10 +41,19 @@ body {
     border-radius: inherit;
 }
 
+.main-card {
+    background-color: transparent !important;
+}
+
 .card-img-top {
     aspect-ratio: 4/3;
     object-fit: cover;
     border-radius: 8px !important;
+}
+
+.card-bottom {
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .quiz-card {
@@ -54,7 +61,8 @@ body {
 }
 
 .answer-card:hover {
-    background-color: rgba(0, 0, 0, 0.075);
+    background-color: rgba(0, 0, 0, 0.175);
+    color: white;
     cursor: pointer;
 }
 
@@ -67,4 +75,23 @@ body {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+.result-message {
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+.btn-primary {
+    color: rgb(227, 248, 255) !important;
+    box-shadow: 0px 0px 6px 3px rgb(78 211 255);
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
 }
