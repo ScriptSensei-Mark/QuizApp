@@ -52,7 +52,7 @@ body {
 }
 
 .card-bottom {
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -83,9 +83,15 @@ body {
     margin-bottom: 32px;
 }
 
-.btn-primary {
+
+/* .btn-primary {
     color: rgb(227, 248, 255) !important;
-    box-shadow: 0px 0px 6px 3px rgb(78 211 255);
+    box-shadow: 0px 0px 2px 1px #EC1BD8;
+} */
+
+.neon-blink {
+    color: #ec1bd9;
+    text-shadow: 0px 0px 1px #000000;
 }
 
 .score-board {
@@ -93,5 +99,15 @@ body {
     justify-content: space-around;
     font-size: 20px;
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 32px;
+}
+
+.progress {
+    border-radius: 0 0 8px 8px !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+.progress-bar {
+    background-color: #ec1bd9 !important;
+    box-shadow: 5px 0px 16px 13px #ec1bd9;
 }
