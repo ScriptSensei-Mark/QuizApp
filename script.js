@@ -23,11 +23,11 @@ function renderQuestion() {
     let amountQuestions = categories[0][Object.keys(categories[0])[0]].length;
     let categoryName = Object.keys(categories[0])[0];
     if (currentQuestion >= amountQuestions) {
-        currentQuestion = 0;
         let cardImg = document.getElementById('cardImg');
         cardImg.src = './img/neon-trophy.jpeg';
         cardBody = document.getElementById('cardBody');
         cardBody.innerHTML = getResultBodyHTML(categoryName, amountQuestions);
+        currentQuestion = 0;
     } else {
         document.getElementById('questionText').innerText = question.questionText;
         document.getElementById('totalQuestions').innerHTML = categories[0][Object.keys(categories[0])[0]].length;
@@ -41,8 +41,8 @@ function renderQuestion() {
 
 
 function toMainScreen() {
-    currentQuestion = 0;
     correctAnswers = 0
+    resetProgress();
 };
 
 
@@ -57,6 +57,7 @@ function checkIfCorrect(answer) {
         document.getElementById(`answer${question.correctAnswer+1}`).parentNode.classList.add('bg-success');
     }
     document.getElementById('nextQuestionBtn').disabled = false;
+    checkProgress();
     lockAnswers();
 };
 
@@ -68,6 +69,27 @@ function nextQuestion() {
     unlockAnswers();
     renderQuestion();
 };
+
+
+function checkProgress() {
+    currentQuestion++;
+    totalQuestions = categories[0][Object.keys(categories[0])[0]].length;
+    let progress = 100 * (currentQuestion / totalQuestions);
+    currentQuestion--;
+    console.log(progress);
+    updateProgressBar(progress);
+    return progress;
+};
+
+
+function updateProgressBar(progress) {
+    let progressBar = document.getElementById('progressBar');
+    progressBar.innerHTML = progress + "%";
+    progressBar.style.width = progress + "%";
+};
+
+
+function resetProgress() {};
 
 
 function enableNextQuestionBtn() {
