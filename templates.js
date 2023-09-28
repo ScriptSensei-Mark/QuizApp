@@ -31,17 +31,26 @@ function getAnswersHTML() {
 };
 
 
+function progressBarHTML() {
+    return /*html*/ `
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+        </div>
+    `;
+};
+
+
 function getResultBodyHTML(categoryName, total) {
     return /*html*/ `        
         <div class="card-body">
             <h3 id="resultHeadline" class="result-message">
-                Du hast<br>
+                Kategorie<br>
                 ${categoryName}<br>
-                abgeschlossen
+                Abgeschlossen
             </h3>
 
             <div class="score-board">
-                <div>Dein Score</div>
+                <div class="neon-blink">Dein Score</div>
                 <div>${correctAnswers}/${total}</div>
             </div>
 
