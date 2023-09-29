@@ -62,10 +62,12 @@ function checkIfCorrect(answer) {
     let i = answer + 1;
     if (answer == question.correctAnswer) {
         document.getElementById(`answer${i}`).parentNode.classList.add('bg-success');
+        AUDIO_SUCCESS.play();
         correctAnswers++;
     } else {
         document.getElementById(`answer${i}`).parentNode.classList.add('bg-danger');
         document.getElementById(`answer${question.correctAnswer+1}`).parentNode.classList.add('bg-success');
+        AUDIO_FAIL.play();
     }
     document.getElementById('nextQuestionBtn').disabled = false;
     checkProgress();
@@ -95,7 +97,7 @@ function checkProgress() {
 function isLastQuestion() {
     let lastQuestionIndex = categories[0][Object.keys(categories[0])[0]].length - 1;
     if (currentQuestion == lastQuestionIndex) {
-        document.getElementById('nextQuestionBtn').innerText = 'Quiz beenden';
+        document.getElementById('nextQuestionBtn').innerText = 'Siehe Ergebnis';
     }
 };
 

@@ -340,3 +340,5 @@ let questions =
 let categories = questions.categories;
 let currentQuestion = 0;
 let correctAnswers = 0;
+let AUDIO_SUCCESS = new Audio('./audio/success.ogg');
+let AUDIO_FAIL = new Audio('./audio/fail.ogg');
