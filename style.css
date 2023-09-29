@@ -20,6 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0.25rem;
 }
 
 .card {
@@ -55,7 +56,7 @@ body {
 }
 
 .quiz-card {
-    width: 30rem;
+    max-width: 30rem;
 }
 
 .answer-card:hover {
@@ -84,12 +85,13 @@ body {
 .btn-primary {
     color: rgb(227, 248, 255) !important;
     background-color: #1284ff !important;
-    box-shadow: 0px 0px 2px 1px #EC1BD8;
+    box-shadow: 0px 0px 2px 1px #1284ff;
 }
 
 .btn-primary:hover {
     background-color: #EC1BD8 !important;
     border-color: #EC1BD8 !important;
+    box-shadow: 0px 0px 2px 1px #EC1BD8;
 }
 
 .neon-blink {
