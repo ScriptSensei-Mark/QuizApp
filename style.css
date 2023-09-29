@@ -20,8 +20,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 775px;
-    max-height: 775px;
 }
 
 .card {
@@ -83,11 +81,16 @@ body {
     margin-bottom: 32px;
 }
 
-
-/* .btn-primary {
+.btn-primary {
     color: rgb(227, 248, 255) !important;
+    background-color: #1284ff !important;
     box-shadow: 0px 0px 2px 1px #EC1BD8;
-} */
+}
+
+.btn-primary:hover {
+    background-color: #EC1BD8 !important;
+    border-color: #EC1BD8 !important;
+}
 
 .neon-blink {
     color: #ec1bd9;

@@ -41,8 +41,19 @@ function renderQuestion() {
 
 
 function toMainScreen() {
-    correctAnswers = 0
     resetProgress();
+    reloadPage();
+};
+
+
+function reloadPage() {
+    location.reload();
+};
+
+
+function resetProgress() {
+    correctAnswers = 0;
+    currentQuestion = 0;
 };
 
 
@@ -64,6 +75,7 @@ function checkIfCorrect(answer) {
 
 function nextQuestion() {
     currentQuestion++;
+    isLastQuestion();
     enableNextQuestionBtn();
     removeBackgroundColor();
     unlockAnswers();
@@ -72,13 +84,19 @@ function nextQuestion() {
 
 
 function checkProgress() {
-    currentQuestion++;
     totalQuestions = categories[0][Object.keys(categories[0])[0]].length;
-    let progress = 100 * (currentQuestion / totalQuestions);
-    currentQuestion--;
+    let progress = 100 * ((currentQuestion + 1) / totalQuestions); // Beachte das "+1" hier
     console.log(progress);
     updateProgressBar(progress);
     return progress;
+};
+
+
+function isLastQuestion() {
+    let lastQuestionIndex = categories[0][Object.keys(categories[0])[0]].length - 1;
+    if (currentQuestion == lastQuestionIndex) {
+        document.getElementById('nextQuestionBtn').innerText = 'Quiz beenden';
+    }
 };
 
 
@@ -87,9 +105,6 @@ function updateProgressBar(progress) {
     progressBar.innerHTML = progress + "%";
     progressBar.style.width = progress + "%";
 };
-
-
-function resetProgress() {};
 
 
 function enableNextQuestionBtn() {

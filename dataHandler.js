@@ -49,12 +49,12 @@ let questions =
                     {
                         "questionText": "Wie definiert man eine Kommentarzeile in HTML?",
                         "answers": [
-                            "<!-- Dies ist ein Kommentar -->",
                             "XoXo Dies ist ein Kommentar oXoX",
                             "// Dies ist ein Kommentar //",
-                            "/* Dies ist ein Kommentar */"
+                            "/* Dies ist ein Kommentar */",
+                            "<!-- Dies ist ein Kommentar -->"
                         ],
-                        "correctAnswer": 0
+                        "correctAnswer": 3
                     }
                 ]
             },
